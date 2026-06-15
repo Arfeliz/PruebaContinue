@@ -8,7 +8,7 @@ name: Deploy Vi Peluquería
 on:
   # Se activa al hacer push a la rama main
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
   # También se puede ejecutar manualmente
   workflow_dispatch:
