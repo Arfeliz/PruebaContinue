@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vi Peluquería - Estilo y Elegancia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVBAR -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Vi<span>Peluquería</span></a>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="active">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO / INICIO -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1>Bienvenido a <span class="highlight">Vi</span></h1>
+            <p>Donde tu estilo cobra vida. Cortes modernos, coloración profesional y tratamientos capilares de primera calidad.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn btn-primary">Agenda tu cita</a>
+                <a href="#servicios" class="btn btn-secondary">Ver servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="servicios section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Servicios</h2>
+                <p>Ofrecemos una amplia gama de servicios para hombres, mujeres y niños.</p>
+            </div>
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <div class="servicio-icon"><i class="fas fa-cut"></i></div>
+                    <h3>Corte de Cabello</h3>
+                    <p>Cortes clásicos y modernos adaptados a tu estilo personal.</p>
+                    <span class="precio">Desde $15</span>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-icon"><i class="fas fa-palette"></i></div>
+                    <h3>Coloración</h3>
+                    <p>Mechas, balayage, tinte completo y más técnicas profesionales.</p>
+                    <span class="precio">Desde $35</span>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-icon"><i class="fas fa-hand-sparkles"></i></div>
+                    <h3>Tratamientos Capilares</h3>
+                    <p>Hidratación profunda, keratina, botox capilar y reconstrucción.</p>
+                    <span class="precio">Desde $25</span>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-icon"><i class="fas fa-brush"></i></div>
+                    <h3>Peinados</h3>
+                    <p>Peinados para bodas, graduaciones y eventos especiales.</p>
+                    <span class="precio">Desde $30</span>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-icon"><i class="fas fa-child"></i></div>
+                    <h3>Servicio Infantil</h3>
+                    <p>Cortes divertidos y pacientes para los más pequeños.</p>
+                    <span class="precio">Desde $10</span>
+                </div>
+                <div class="servicio-card">
+                    <div class="servicio-icon"><i class="fas fa-menorah"></i></div>
+                    <h3>Arreglo de Barba</h3>
+                    <p>Perfilado y arreglo de barba con navaja y tijera.</p>
+                    <span class="precio">Desde $10</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="galeria section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galería de Estilos</h2>
+                <p>Inspírate con nuestros trabajos recientes.</p>
+            </div>
+            <div class="galeria-grid">
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400&h=500&fit=crop" alt="Corte moderno">
+                    <div class="galeria-overlay"><h4>Corte Moderno</h4></div>
+                </div>
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&h=500&fit=crop" alt="Coloración">
+                    <div class="galeria-overlay"><h4>Coloración</h4></div>
+                </div>
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?w=400&h=500&fit=crop" alt="Peinado">
+                    <div class="galeria-overlay"><h4>Peinado Elegante</h4></div>
+                </div>
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1596728325488-58c87691e9af?w=400&h=500&fit=crop" alt="Barba">
+                    <div class="galeria-overlay"><h4>Arreglo de Barba</h4></div>
+                </div>
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=400&h=500&fit=crop" alt="Tratamiento">
+                    <div class="galeria-overlay"><h4>Tratamiento Capilar</h4></div>
+                </div>
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=400&h=500&fit=crop" alt="Corte mujer">
+                    <div class="galeria-overlay"><h4>Corte Femenino</h4></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="nosotros section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre Nosotros</h2>
+                <p>Conoce nuestra historia y pasión por la peluquería.</p>
+            </div>
+            <div class="nosotros-content">
+                <div class="nosotros-texto">
+                    <h3>Más de 10 años de experiencia</h3>
+                    <p>En <strong>Vi Peluquería</strong> nos apasiona transformar estilos y realzar la belleza natural de cada persona. Nuestro equipo de expertos estilistas está constantemente capacitándose en las últimas tendencias y técnicas.</p>
+                    <p>Utilizamos productos de la más alta calidad para garantizar resultados espectaculares y duraderos. Tu satisfacción es nuestra prioridad.</p>
+                    <ul class="nosotros-lista">
+                        <li><i class="fas fa-check-circle"></i> Profesionales certificados</li>
+                        <li><i class="fas fa-check-circle"></i> Productos de primeras marcas</li>
+                        <li><i class="fas fa-check-circle"></i> Ambiente acogedor y moderno</li>
+                        <li><i class="fas fa-check-circle"></i> Atención personalizada</li>
+                    </ul>
+                </div>
+                <div class="nosotros-imagen">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=500&h=600&fit=crop" alt="Nuestro salón">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="testimonios section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lo Que Dicen Nuestros Clientes</h2>
+            </div>
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"El mejor corte que me han hecho. El equipo es muy profesional y el trato excelente."</p>
+                    <h4>- María García</h4>
+                </div>
+                <div class="testimonio-card">
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Desde que voy a Vi Peluquería mi cabello nunca había estado tan saludable. El tratamiento de keratina es increíble."</p>
+                    <h4>- Laura Mendoza</h4>
+                </div>
+                <div class="testimonio-card">
+                    <div class="estrellas">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Ambiente súper agradable, precios justos y resultados espectaculares. Mi lugar favorito."</p>
+                    <h4>- Carlos Ruiz</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HORARIOS -->
+    <section class="horarios section-padding">
+        <div class="container">
+            <div class="horarios-card">
+                <h2><i class="fas fa-clock"></i> Horarios de Atención</h2>
+                <div class="horarios-grid">
+                    <div class="horario-item">
+                        <span class="dia">Lunes - Viernes</span>
+                        <span class="hora">9:00 AM - 8:00 PM</span>
+                    </div>
+                    <div class="horario-item">
+                        <span class="dia">Sábado</span>
+                        <span class="hora">9:00 AM - 6:00 PM</span>
+                    </div>
+                    <div class="horario-item">
+                        <span class="dia">Domingo</span>
+                        <span class="hora">Cerrado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contacto</h2>
+                <p>Agenda tu cita o contáctanos. Te esperamos.</p>
+            </div>
+            <div class="contacto-content">
+                <div class="contacto-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Calle Principal #123, Ciudad</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+1 (809) 555-1234</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@vipeluqueria.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horarios</h4>
+                            <p>Lun-Sáb: 9AM - 8PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contacto-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="nombre" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="telefono" placeholder="Teléfono">
+                    </div>
+                    <div class="form-group">
+                        <select id="servicio">
+                            <option value="">Selecciona un servicio</option>
+                            <option value="corte">Corte de Cabello</option>
+                            <option value="color">Coloración</option>
+                            <option value="tratamiento">Tratamiento Capilar</option>
+                            <option value="peinado">Peinado</option>
+                            <option value="infantil">Servicio Infantil</option>
+                            <option value="barba">Arreglo de Barba</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensaje" rows="4" placeholder="Mensaje o detalles adicionales"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Vi<span>Peluquería</span></h3>
+                    <p>Transformando estilos, realzando belleza.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Corte de Cabello</a></li>
+                        <li><a href="#">Coloración</a></li>
+                        <li><a href="#">Tratamientos</a></li>
+                        <li><a href="#">Peinados</a></li>
+                        <li><a href="#">Barba</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Suscríbete</h4>
+                    <p>Recibe ofertas y novedades</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vi Peluquería. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/18095551234" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

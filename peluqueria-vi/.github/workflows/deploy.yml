@@ -1,0 +1,53 @@
+# ============================================
+# Vi Peluquería - GitHub Actions
+# Deploy automático a GitHub Pages
+# ============================================
+
+name: Deploy Vi Peluquería
+
+on:
+  # Se activa al hacer push a la rama main
+  push:
+    branches: [ "main" ]
+
+  # También se puede ejecutar manualmente
+  workflow_dispatch:
+
+# Permisos para GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Solo un despliegue a la vez
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  # ---- JOB 1: Build / Construcción ----
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Pages
+        uses: actions/configure-pages@v4
+
+      - name: Subir artefacto (archivos estáticos)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'   # Sube todo el proyecto (index.html, styles.css, script.js)
+
+  # ---- JOB 2: Deploy / Publicar en GitHub Pages ----
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Desplegar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

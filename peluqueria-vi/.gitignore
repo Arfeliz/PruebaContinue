@@ -1,0 +1,38 @@
+# ============================================
+# Vi Peluquería - .gitignore
+# ============================================
+
+# Node / Dependencias (si usas algún build tool)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Entorno / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración local
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# Carpeta de build (si usas webpack, vite, etc.)
+dist/
+build/
+
+# Carpeta de assets generados
+*.css.map
+*.js.map
+
+# Archivos temporales
+tmp/
+temp/
